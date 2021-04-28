@@ -10,6 +10,8 @@ import service.TestService;
 
 import java.util.List;
 
+//Controller와 Service를 구분하는 것을 생각해주세요.
+//Controller는 서비스를 호출하는데 집중해야하지만, 이번 예제에서는 결과 출력을 겸하겠습니다.
 @Controller
 public class TestController {
     @Autowired

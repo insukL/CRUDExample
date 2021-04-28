@@ -35,14 +35,12 @@ public class TestServiceImpl implements TestService {
                 temp.setAccount(rs.getString("account"));
                 temp.setPassword(rs.getString("password"));
                 temp.setNick_name(rs.getString("nick_name"));
-                temp.setDeleted(rs.getInt("deleted"));
                 ret.add(temp);
             }
 
             rs.close();
             stmt.close();
             conn.close();
-
         //이하는 발생 가능 오류 try catch입니다.
         } catch (Exception e) {
             System.out.println(e.getMessage());

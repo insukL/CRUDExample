@@ -1,11 +1,11 @@
 package domain;
 
+//본인의 테이블에 맞는 객체를 구성하시면 됩니다.
 public class Users {
     protected long id;
     protected String account;
     protected String password;
     protected String nick_name;
-    protected int deleted;
 
     public long getId() {
         return id;
@@ -37,13 +37,5 @@ public class Users {
 
     public void setNick_name(String nick_name) {
         this.nick_name = nick_name;
-    }
-
-    public int isDeleted() {
-        return deleted;
-    }
-
-    public void setDeleted(int deleted) {
-        this.deleted = deleted;
     }
 }
